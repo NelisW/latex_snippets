@@ -16,7 +16,7 @@
 		"prefix": "al",
 		"body": [
 			"\\begin{align*}",
-			"\t$0",
+			"$0",
 			"\\end{align*}"
 		]
 	},
@@ -72,7 +72,7 @@
 		"prefix": "itemize",
 		"body": [
 			"\\begin{itemize}",
-			"\t\\item $1",
+			"\\item $1",
 			"\\end{itemize}",
 			"$0"
 		]
@@ -81,7 +81,7 @@
 		"prefix": "enum",
 		"body": [
 			"\\begin{enumerate}",
-			"\t\\item $1",
+			"\\item $1",
 			"\\end{enumerate}",
 			"$0"
 		]
@@ -90,7 +90,7 @@
 		"prefix": "beg",
 		"body": [
 			"\\begin{${1:name}}",
-			"\t$0",
+			"$0",
 			"\\end{${1:name}}"
 		]
 	},
@@ -104,9 +104,9 @@
 		"prefix": "img",
 		"body": [
 			"\\begin{figure}[H]",
-			"\t\\centering",
-			"\t\\includegraphics[width=0.5\\textwidth]{${1:${TM_SELECTED_TEXT}}}",
-			"\t\\caption{${2:caption}\\label{fig:${3:sample}}}",
+			"\\centering",
+			"\\includegraphics[width=0.5\\textwidth]{${1:${TM_SELECTED_TEXT}}}",
+			"\\caption{${2:caption}\\label{fig:${3:sample}}}",
 			"\\end{figure}",
 			"$0"
 		]
@@ -115,14 +115,14 @@
 		"prefix": "tab",
 		"body": [
 			"\\begin{table}[H]",
-			"\t\\centering",
-			"\t\\begin{tabular}{${1:ccc}}",
-			"\t\t\\toprule",
-			"\t\ta & b & c \\\\\\ \\midrule",
-			"\t\t1 & 2 & 3 \\\\\\",
-			"\t\t\\bottomrule",
-			"\t\\end{tabular}",
-			"\t\\caption{${2:caption}\\label{tab:${3:sample}}}",
+			"\\centering",
+			"\\begin{tabular}{${1:ccc}}",
+			"\\toprule",
+			"a & b & c \\\\\\ \\midrule",
+			"1 & 2 & 3 \\\\\\",
+			"\\bottomrule",
+			"\\end{tabular}",
+			"\\caption{${2:caption}\\label{tab:${3:sample}}}",
 			"\\end{table}",
 			"$0"
 		]
@@ -214,6 +214,12 @@
 		"prefix": "rm",
 		"body": [
 			"\\mathrm{$1} $0"
+		]
+	},
+	"lstlisting": {
+		"prefix": "lst",
+		"body": [
+			"\\lstlisting{$1} $0"
 		]
 	}
 }

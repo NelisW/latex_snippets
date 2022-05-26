@@ -8,9 +8,6 @@ snippet box "Box" A
 ``rv = '└' + '─'.repeat(t[0].length + 2) + '┘'``
 endsnippet
 
-snippet // "Fraction simple" A
-\frac{$1}{$2}$0
-endsnippet
 
 snippet `((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/` "Fraction no ()" A
 \frac{``rv = m[1]``}{$1}$0

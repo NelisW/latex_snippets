@@ -216,10 +216,10 @@
 			"\\mathrm{$1} $0"
 		]
 	},
-	"lstlisting": {
+	"lstinline": {
 		"prefix": "lst",
 		"body": [
-			"\\lstlisting{$1} $0"
+			"\\lstinline{$1} $0"
 		]
 	}
 }

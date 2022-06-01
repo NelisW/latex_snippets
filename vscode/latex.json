@@ -103,7 +103,7 @@
 	"Image": {
 		"prefix": "img",
 		"body": [
-			"\\begin{figure}[H]",
+			"\\begin{figure}[tbph]",
 			"\\centering",
 			"\\includegraphics[width=0.5\\textwidth]{${1:${TM_SELECTED_TEXT}}}",
 			"\\caption{${2:caption}\\label{fig:${3:sample}}}",
@@ -114,15 +114,15 @@
 	"Table": {
 		"prefix": "tab",
 		"body": [
-			"\\begin{table}[H]",
+			"\\begin{table}[tbph]",
 			"\\centering",
+			"\\caption{${2:caption}\\label{tab:${3:sample}}}",
 			"\\begin{tabular}{${1:ccc}}",
 			"\\toprule",
 			"a & b & c \\\\\\ \\midrule",
 			"1 & 2 & 3 \\\\\\",
 			"\\bottomrule",
 			"\\end{tabular}",
-			"\\caption{${2:caption}\\label{tab:${3:sample}}}",
 			"\\end{table}",
 			"$0"
 		]
@@ -217,9 +217,17 @@
 		]
 	},
 	"lstinline": {
-		"prefix": "lst",
+		"prefix": "lsti",
 		"body": [
 			"\\lstinline{$1} $0"
+		]
+	},
+		"lstlisting*": {
+		"prefix": "lstl",
+		"body": [
+			"\\begin{listing}",
+			"$0",
+			"\\end{listing}"
 		]
 	}
 }

@@ -93,15 +93,6 @@ snippet `([a-zA-Z0-9])td` "exponentiation" A
 ``rv = m[1] + '^{$1}'``
 endsnippet
 
-snippet `\b(d|D)(\\?\w+)[dD](\w{1}|\\\w+) ` "derivatives" A
-``
-if (m[1] == 'd') 
-  rv = '\\frac{\\partial ' + m[2] + '}{\\partial ' + m[3] + '}';
-else 
-  rv = '\\frac{\\mathrm{d' + m[2] + '}}{\\mathrm{d' + m[3] + '}}';
-``
-endsnippet
-
 snippet `=>` "implies" A
 `` rv = '\\Rightarrow' ``
 endsnippet

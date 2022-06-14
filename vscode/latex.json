@@ -225,9 +225,9 @@
 		"lstlisting*": {
 		"prefix": "lstl",
 		"body": [
-			"\\begin{listing}",
+			"\\begin{lstlisting}",
 			"$0",
-			"\\end{listing}"
+			"\\end{lstlisting}"
 		]
 	}
 }

@@ -98,10 +98,6 @@ snippet `=<` "implied by" A
 ``rv = '\\Leftarrow'``
 endsnippet
 
-snippet `==` "equals" A
-``rv = '&= $1 \\\\\\'``
-endsnippet
-
 snippet `<=` "leq" A
 ``rv = '\\leq'``
 endsnippet

@@ -6,7 +6,7 @@ Common snippets to write faster LaTeX
 
 * Install the [HyperSnips](https://github.com/draivin/hsnips) extension.
 * Open the HyperSnips directory (Ctrl + Shift + P, "HyperSnips: Open Snippets Directory") and copy there the file `hsnips/latex.hsnips`
-* From the VSCode menu (Ctrl + Shift + P) go to "Preferences: Configure User Snippets" and select "latex". Copy there the content of `vscode/latex.json`
+* From the hsnips folder in previous entry, up one folder and down again into `snippets`. Copy there the content of `vscode/latex.json`
 * Set keybindings with Ctrl + Shift + P, and "Preferences: Open Keyboard Shortcuts (JSON)". Copy there the content of `vscode/keybindings.json`
 * You may also install the `LaTeX Workshop` extension, but some snippets may conflict. You can disable the snippets from that extension thanks to another extension: `Control Snippets`.
 

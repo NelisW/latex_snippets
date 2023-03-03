@@ -42,13 +42,6 @@ rv = msg;
 \\end{pmatrix}
 endsnippet
 
-snippet `([a-zA-Z])([0-9]+) ` "underset" A
-``if ( m[2].length == 1 ) { a = '_'; b = ' '; }
-  else { a = '_{'; b = '} '; }
-  rv = m[1] + a + m[2] + b``
-endsnippet
-
-
 snippet `\b([a-zA-Z])bar\b` "bar" A
 ``rv = '\\bar{' + m[1] + '}'``
 endsnippet
